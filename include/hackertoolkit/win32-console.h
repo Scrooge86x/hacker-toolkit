@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef HTK_CONSOLE
-#define HTK_CONSOLE
+#ifndef HTK_WIN32_CONSOLE
+#define HTK_WIN32_CONSOLE
 
 #pragma once
 
@@ -40,4 +40,4 @@ private:
 
 }
 
-#endif // HTK_CONSOLE
+#endif // HTK_WIN32_CONSOLE
