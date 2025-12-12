@@ -7,6 +7,8 @@
 // or as a static variable in order to call its methods
 // inside of lambdas
 
+namespace htk {
+
 template <typename T>
 struct HookWrapper {
     static_assert(
@@ -24,5 +26,7 @@ public:
     FnType hooked{};
     FnType original{};
 };
+
+}
 
 #endif // HOOK_WRAPPER

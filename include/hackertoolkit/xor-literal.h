@@ -5,6 +5,8 @@
 
 #include <cstddef>
 
+namespace htk {
+
 template <std::size_t t_size>
 class XorString {
 public:
@@ -32,8 +34,10 @@ private:
     };
 };
 
-template <XorString t_xorStr>
-[[nodiscard]] XorString<t_xorStr.size> operator""_xor() {
+}
+
+template <htk::XorString t_xorStr>
+[[nodiscard]] htk::XorString<t_xorStr.size> operator""_xor() {
     return t_xorStr;
 }
 

@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <iostream>
 
-HookWrapper<decltype(std::puts)> g_putsHook{
+htk::HookWrapper<decltype(std::puts)> g_putsHook{
     [](const char*) -> int {
         return g_putsHook.original("Hooked!");
     }
@@ -37,7 +37,7 @@ static int get10() {
 }
 
 static int demoGet10Hook() {
-    static HookWrapper<int()> getValueHook{
+    static htk::HookWrapper<int()> getValueHook{
         []() -> int {
             getValueHook.original();
             return 999;
