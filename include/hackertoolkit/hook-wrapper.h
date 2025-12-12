@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef HOOK_WRAPPER
-#define HOOK_WRAPPER
+#ifndef HTK_HOOK_WRAPPER
+#define HTK_HOOK_WRAPPER
 
 // Remember that HookWrapper must be defined globally
 // or as a static variable in order to call its methods
@@ -29,4 +29,4 @@ public:
 
 }
 
-#endif // HOOK_WRAPPER
+#endif // HTK_HOOK_WRAPPER

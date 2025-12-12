@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef XOR_LITERAL
-#define XOR_LITERAL
+#ifndef HTK_XOR_LITERAL
+#define HTK_XOR_LITERAL
 
 #include <cstddef>
 
@@ -41,4 +41,4 @@ template <htk::XorString t_xorStr>
     return t_xorStr;
 }
 
-#endif // XOR_LITERAL
+#endif // HTK_XOR_LITERAL
