@@ -1,2 +1,2 @@
-add_executable(win32_console WIN32 main.cpp)
-target_link_libraries(win32_console PRIVATE hackertoolkit)
+add_executable(htk_win32_console WIN32 main.cpp)
+target_link_libraries(htk_win32_console PRIVATE hackertoolkit)

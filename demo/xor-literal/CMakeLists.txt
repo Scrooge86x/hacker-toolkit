@@ -1,2 +1,2 @@
-add_executable(xor_literal main.cpp)
-target_link_libraries(xor_literal PRIVATE hackertoolkit)
+add_executable(htk_xor_literal main.cpp)
+target_link_libraries(htk_xor_literal PRIVATE hackertoolkit)
