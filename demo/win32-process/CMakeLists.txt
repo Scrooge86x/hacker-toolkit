@@ -1,0 +1,2 @@
+add_executable(htk_win32_process main.cpp)
+target_link_libraries(htk_win32_process PRIVATE hackertoolkit)
