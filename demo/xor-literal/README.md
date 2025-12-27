@@ -1,4 +1,4 @@
-# xor-literal
+# [xor-literal](../../include/hackertoolkit/xor-literal.h)
 
 Obfuscation of string literals during compile time.
 It can make reverse engineering your program harder.

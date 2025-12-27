@@ -1,4 +1,4 @@
-# htk-defer
+# [htk-defer](../../include/hackertoolkit/htk-defer.h)
 
 Useful helper when working with C style apis.
 It's called HTK_DEFER because DEFER would be a too generic name that could clash.
