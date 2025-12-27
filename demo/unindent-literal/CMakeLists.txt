@@ -1,0 +1,2 @@
+add_executable(htk_unindent_literal main.cpp)
+target_link_libraries(htk_unindent_literal PRIVATE hackertoolkit)
