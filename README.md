@@ -32,7 +32,7 @@ The headers that use <Windows.h> **DO NOT** define `WIN32_LEAN_AND_MEAN` you mig
 
 This library is header only because it contains a lot of templated code.
 
-The most important directory for you is [include](include/) which contains the actual headers.
+The most important directory for you is [include/hackertoolkit](include/hackertoolkit) which contains the actual headers.
 For every header there is a matching directory located in the [demo](demo/).
 
 For example if you want to learn how to use [htk::HookWrapper](include/hackertoolkit/hook-wrapper.h)
