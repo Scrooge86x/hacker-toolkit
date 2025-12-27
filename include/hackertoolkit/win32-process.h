@@ -3,6 +3,7 @@
 #ifndef HTK_WIN32_PROCESS
 #define HTK_WIN32_PROCESS
 
+#include <Windows.h>
 #include <TlHelp32.h>
 #include <string_view>
 

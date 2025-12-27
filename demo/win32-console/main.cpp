@@ -1,5 +1,4 @@
 #define WIN32_LEAN_AND_MEAN
-#include <Windows.h>
 #include <hackertoolkit/win32-console.h>
 
 #include <thread>
