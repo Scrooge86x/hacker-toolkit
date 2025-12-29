@@ -11,11 +11,10 @@ namespace htk {
 
 template <typename T>
 struct HookWrapper {
-    static_assert(
-        sizeof(T) == 0,
+    static_assert(sizeof(T) == 0,
         "HookWrapper requires a function type as a template parameter. "
         "For example HookWrapper<void(int, double)> or HookWrapper<int()>."
-        );
+    );
 };
 
 template <typename ReturnType, typename... Args>
