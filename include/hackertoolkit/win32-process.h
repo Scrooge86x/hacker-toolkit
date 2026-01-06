@@ -9,7 +9,7 @@
 
 namespace htk {
 
-::PROCESSENTRY32 getProcessEntry(const std::string_view processName) {
+[[nodiscard]] inline ::PROCESSENTRY32 getProcessEntry(const std::string_view processName) {
     ::PROCESSENTRY32 processEntry{ .dwSize{ sizeof(::PROCESSENTRY32) } };
     ::HANDLE hProcessSnapshot{ ::CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL) };
     if (hProcessSnapshot == INVALID_HANDLE_VALUE) {
@@ -32,7 +32,10 @@ namespace htk {
     return {};
 }
 
-::MODULEENTRY32 getModuleEntry(const std::string_view moduleName, const ::DWORD processId) {
+[[nodiscard]] inline ::MODULEENTRY32 getModuleEntry(
+    const std::string_view moduleName,
+    const ::DWORD processId
+) {
     ::MODULEENTRY32 moduleEntry{ .dwSize{ sizeof(::MODULEENTRY32) } };
     ::HANDLE hModuleSnapshot{ ::CreateToolhelp32Snapshot(TH32CS_SNAPMODULE, processId) };
     if (hModuleSnapshot == INVALID_HANDLE_VALUE) {
